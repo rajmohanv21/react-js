@@ -1,0 +1,25 @@
+.App {
+	text-align: center;
+
+	button {
+		font-weight: bold;
+	}
+
+}
+
+.counter-position {
+	height: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+h1 {
+	width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	border-style: none;
+  border-radius: 50%;
+}
