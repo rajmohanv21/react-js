@@ -6,7 +6,7 @@ const refreshIDLength = 4;
 const seed = {
 	count: config.countStart,
 	refreshID: rndString(refreshIDLength),
-	counterBgColor: config.color.initialColor,
+	counterBgColor: config.color[0],
 };
 
 export default seed;

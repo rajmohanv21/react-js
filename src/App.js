@@ -1,20 +1,15 @@
 import { React } from 'react';
 import './App.scss';
+import Counter from './components/Counter';
 import SimpleButton from './components/simpleButton';
+import RefreshID from './components/RefreshID';
 
-const App = (context) => {
-	const { state: { count, refreshID, counterBgColor }} = context;
+const App = (context) =>
 
-	return <div className="App" role="application">
-		<div>Count Value</div>
-		<div className="counter-position">
-			<h1 style={ { backgroundColor: counterBgColor } }>
-				{count} </h1>
-		</div>
+	<div className="App" role="application">
+		<Counter { ...context }/>
 		<SimpleButton { ...context }/>
-		<div>Refresh ID: {refreshID}</div>
+		<RefreshID { ...context }/>
 	</div>;
-}
-	;
 
 export default App;

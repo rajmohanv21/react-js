@@ -2,19 +2,19 @@
 const increaseCount = ({
 	state,
 	data,
-	config: { color: { incrementBgColor }},
+	config: { color },
 }) => ({
 	count: state.count + data,
-	counterBgColor: incrementBgColor,
+	counterBgColor: color[state.count + data],
 });
 
 const decreaseCount = ({
 	state,
 	data,
-	config: { color: { decrementBgColor }},
+	config: { color },
 }) => ({
 	count: state.count - data,
-	counterBgColor: decrementBgColor,
+	counterBgColor: color[state.count - data],
 });
 
 const actions = {
