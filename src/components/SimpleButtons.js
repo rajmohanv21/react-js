@@ -1,5 +1,5 @@
-import { React } from 'react';
-import { validateIncrementButton } from '../services/buttonValidation';
+import React from 'react';
+import validateIncrementButton from '../services/buttonValidation';
 
 const SimpleButtons = ({
 	actions: { increaseCount, decreaseCount },
